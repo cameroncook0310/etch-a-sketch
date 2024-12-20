@@ -1,6 +1,6 @@
+
 // Create initial screen grid structure of 16 by 16 divs
 const container = document.querySelector(".content-container");
-let enterCount = 0;
 
 for (i=0; i<16; i++) {
     let rowDiv = document.createElement("div");
@@ -15,6 +15,7 @@ for (i=0; i<16; i++) {
     container.append(rowDiv);
 }
 
+// Remove all divs from the container div
 function deleteScreenGrid() {
     let lastChild = container.lastElementChild;
     while (lastChild.tagName == "DIV") {
@@ -23,6 +24,7 @@ function deleteScreenGrid() {
     }
 }
 
+// Update screen grid size with given size
 function updateScreenGrid(newSize) {
     deleteScreenGrid()
 
@@ -46,7 +48,7 @@ function updateScreenGrid(newSize) {
 }
 
 
-
+let enterCount = 0
 document.addEventListener("mouseover", (e) => {
     let target = e.target;
 
@@ -68,6 +70,7 @@ document.addEventListener("mouseover", (e) => {
         enterCount = 0;
     }
 });
+
 
 document.addEventListener("click", (e) => {
     let target = e.target;
