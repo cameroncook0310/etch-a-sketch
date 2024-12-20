@@ -1,11 +1,33 @@
+.header {
+    color: #f3dab5;
+    background-color: #d8292d;
+    margin: 0;
+    padding: 18px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+.title {
+    font-family: 'Pacifico', 'Brush Script MT', cursive;
+    font-size: 60px;
+    padding: 0 10px 0 10px;
+}
+
+.content-container {
+    border-left: 109.75px solid #d8292d;
+    border-right: 109.75px solid #d8292d;
+    border-bottom: 109.75px solid #d8292d;
+}
+
 .div-row {
     display: flex;
 }
 
 .grid-div {
     flex: 1;
-    height: 50px;
-    width: 50px;
-    background-color: blue;
-    border: 3px, solid, black;
+    height: 60px;
+    width: 60px;
+    background-color: #9b9796;
+    border: 3px solid black;
 }
