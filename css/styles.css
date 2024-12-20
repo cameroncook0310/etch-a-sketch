@@ -25,9 +25,8 @@
 }
 
 .grid-div {
-    flex: 1;
-    height: 60px;
-    width: 60px;
+    flex: auto;
+    height: 40px;
+    width: 40px;
     background-color: #9b9796;
-    border: 3px solid black;
 }
