@@ -1,0 +1,11 @@
+.div-row {
+    display: flex;
+}
+
+.grid-div {
+    flex: 1;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border: 3px, solid, black;
+}
