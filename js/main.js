@@ -13,3 +13,24 @@ for (i=0; i<16; i++) {
     }
     container.append(rowDiv);
 }
+
+let enterCount = 0;
+
+document.addEventListener("mouseover", (e) => {
+    let target = e.target;
+    if (target.classList.contains("grid-div")) {
+        let currentColor = "#bcb6b6";
+        if (enterCount < 100) {
+            enterCount += 10;
+        }
+        if (target.style.backgroundColor) {
+            currentColor = target.style.backgroundColor;
+        }
+        else {
+            currentColor = "#bcb6b6";
+        }
+        target.style.backgroundColor = `color-mix(in oklab, #4f4d4e ${enterCount.toString()}%, ${currentColor}`;
+    } else {
+        enterCount = 0;
+    }
+});
